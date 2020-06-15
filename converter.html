@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Converter</title>
+	<link rel="stylesheet" href="converter.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+
+</head>
+<body>
+	<nav class="menu">
+		<ul class="menu">
+		<li class="menu"><a href="" class="logo"><img src="img/money.png"></a></li>
+		<li class="menu"><a href="index.html">Депозитний калькулятор</a></li>
+		<li class="menu"><a href="loan.html">Кредитний калькулятор</a></li>
+		<li class="menu"><a href="converter.html">Конвертер валют</a></li>
+		<li class="menu"><a href="catalog.html">Картки</a></li>
+	</ul>
+		
+	</nav>
+	<h1>Конвертер валют</h1>
+	<div id="mainContainer">	
+		<div id="mainForm">
+			<div class="form">
+				<div class="inputs" id="left">
+					<label for="from">В мене є</label>
+					<input id="from" class="bothInputs" type="number">
+					<select id="fromCurrency" class="bothSelects">
+						<option value="UAH">Українська гривня (UAH)</option>
+						<option value="USD">Долар США (USD)</option>
+						<option value="EUR">Євро (EUR)</option>
+						<option value="RUB">Російський рубль (RUB)</option>
+						<option value="AUD">Австралійський долар (AUD)</option>
+						<option value="CAD">Канадський долар (CAD)</option>
+						<option value="GBP">Англійський фунт стерлінгів (GBP)</option>
+						<option value="DKK">Данська крона (DKK)</option>
+						<option value="ILS">Новий ізраїльський шекель (ILS)</option>
+						<option value="INR">Індійська рупія (INR)</option>
+						<option value="ZAR">Південноафриканський ранд (ZAR)</option>
+						<option value="PLN">Польський злотий (PLN)</option>
+						<option value="HRK">Хорватська куна (HRK)</option>
+						<option value="SEK">Шведська крона (SEK)</option>
+						<option value="CHF">Швейцарський франк (CHF)</option>		
+						<option value="JPY">Японська єна (JPY)</option>
+
+					</select>
+
+				</div>
+				
+				<div class="inputs" id="image">
+					<a id="aimg" ><img id="swap" src="img/swap.png"></a>
+				</div>
+				
+				<div class="inputs" id="right">
+					<label for="from">Я отримаю</label>
+					<input id="to" class="bothInputs" type="number">
+					<select id="toCurrency" class="bothSelects">
+						<option value="UAH">Українська гривня (UAH)</option>
+						<option value="USD">Долар США (USD)</option>
+						<option value="EUR">Євро (EUR)</option>
+						<option value="RUB">Російський рубль (RUB)</option>
+						<option value="AUD">Австралійський долар (AUD)</option>
+						<option value="CAD">Канадський долар (CAD)</option>
+						<option value="GBP">Англійський фунт стерлінгів (GBP)</option>
+						<option value="DKK">Данська крона (DKK)</option>
+						<option value="ILS">Новий ізраїльський шекель (ILS)</option>
+						<option value="INR">Індійська рупія (INR)</option>
+						<option value="ZAR">Південноафриканський ранд (ZAR)</option>
+						<option value="PLN">Польський злотий (PLN)</option>
+						<option value="HRK">Хорватська куна (HRK)</option>
+						<option value="SEK">Шведська крона (SEK)</option>
+						<option value="CHF">Швейцарський франк (CHF)</option>		
+						<option value="JPY">Японська єна (JPY)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+	<div class="bottom">
+	<h3>Конвертація валют</h3>
+	<p class="bottom">За допомогою конвертера валют можна легко та швидко виконати конвертацію з одної грошової одиниці в іншу. Для цього потрібно обрати зі списку валюту обміну та валюту отримання і ввести бажану суму. Розрахунок виконається миттєво. Якщо Ви бажаєте поміняти місцями обрані валюти, натисніть на картинку між полями вводу. Це набагато швидше, ніж вибирати їх зі списку. Дані офіційного курсу беруться з Національного банку України та Європейського центрального банку за допомогою сервісу Exchange rates API. </p>
+	</div>
+
+	</div>
+
+	<script src="converter.js" type="text/javascript"></script>
+</body>
+</html>
